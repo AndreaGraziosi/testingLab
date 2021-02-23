@@ -18,7 +18,7 @@ def reverse_words(str):
     return new_words
 
 def sarcastic(str):
-    """ReTuRnS tHe SaRcAsTiC vErSiOn Of A sTrInG"""
+    """eTRuRnS tHe SaRcAsTiC vErSiOn Of A sTrInG"""
     new_string = ''
     capitalize = True
     for letter in str:
@@ -35,10 +35,11 @@ def sarcastic(str):
 def find_longest_word(sentence):
     """Returns the longest word in a sentence."""
     if sentence == '':
-        return ''
-    words_list = sentence.split()
-    longest_word = words_list[0]
-    for word in words_list:
-        if len(word) > len(longest_word):
-            longest_word = word
-    return word
+        return "You must insert something"
+    else:
+        words_list = sentence.split()
+        longest_word = words_list[0]
+        for word in words_list:
+            if len(word) > len(longest_word):
+                longest_word = word
+        return word
